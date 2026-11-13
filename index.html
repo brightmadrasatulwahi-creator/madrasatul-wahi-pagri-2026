@@ -2,29 +2,120 @@
 <!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b4b3e"><meta name="description" content="মাদরাসাতুল ওহী পাগড়ি প্রদান অনুষ্ঠান ২০২৬-এর পূর্ণাঙ্গ ডিজিটাল স্মারক">
 <title>মাদরাসাতুল ওহী | ডিজিটাল স্মারক ২০২৬</title><style>
 @import url('https://fonts.maateen.me/kalpurush/font.css');
-/* Uniform Kalpurush Unicode typeface across the digital memorial. */
-html, body, button, input, select, textarea, option, dialog {font-family:'Kalpurush',sans-serif;}
-:root{--deep:#073c33;--green:#0b5443;--gold:#c9a462;--cream:#fbf8f1;--ink:#20352e;--muted:#65796d;--line:#e8e1d5}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);font:14px/1.85 'Kalpurush',sans-serif;color:var(--ink)}
-button,input{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-header{position:sticky;z-index:9;top:0;background:#fffcf5f2;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.head{max-width:1130px;padding:13px 20px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.brand{color:var(--green);font:700 19px 'Kalpurush',serif}.brand small{font:600 10px 'Kalpurush',sans-serif;color:#a17d42;letter-spacing:.07em;display:block}
-nav{display:flex;gap:6px;overflow:auto}nav button{background:none;border:none;border-radius:50px;padding:8px 12px;color:var(--green)}nav button:hover,nav button.active{background:#e2efe7}
-main{max-width:1130px;margin:auto;padding:0 20px 60px}.hero{background:radial-gradient(ellipse at 83% 18%,#1b7660 0,transparent 45%),linear-gradient(125deg,#07372f,#0a5242 62%,#103b34);border-radius:0 0 26px 26px;color:#fff;padding:70px 28px 75px;text-align:center;position:relative;overflow:hidden}
-.hero:before,.hero:after{content:'✦';position:absolute;color:#d6b77855;font-size:170px;top:-60px;left:-15px}.hero:after{left:auto;right:-22px;top:80px}.eyebrow{letter-spacing:.12em;color:#e3cb96;font-size:12px;font-weight:700}.hero h1{font:700 clamp(30px,6vw,57px)/1.5 'Kalpurush',serif;margin:15px 0 7px}.hero h2{font:600 clamp(19px,3.4vw,31px) 'Kalpurush',serif;margin:0 0 16px;color:#f1dbac}.hero p{font-size:15px;opacity:.93}.hero .line{height:1px;max-width:260px;background:#c6a46399;margin:22px auto}.stat{display:inline-flex;align-items:center;gap:7px;padding:9px 21px;border:1px solid #dbba75bb;border-radius:60px;color:#ffe9b8;background:#ffffff0f;font-weight:700}
-.menu{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:25px 0 36px}.tile{background:white;border:1px solid var(--line);text-align:left;padding:22px 19px;border-radius:17px;box-shadow:0 8px 35px #1749360b;transition:transform .16s,border .16s}.tile:hover{transform:translateY(-3px);border-color:#b8ab8c}.tile b{display:block;color:var(--green);margin:5px 0}.tile span{color:#9c814b;font-size:26px}.tile small{display:block;color:var(--muted);font-size:11px}
-.section{background:#fff;border:1px solid var(--line);border-radius:20px;padding:clamp(20px,4vw,36px);box-shadow:0 8px 40px #1749360a;min-height:320px}h2{font:700 clamp(24px,4vw,33px) 'Kalpurush',serif;color:var(--green);margin:0 0 6px}.subtitle{color:var(--muted);margin:0 0 23px}.goldline{height:3px;width:53px;background:var(--gold);margin:0 0 24px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.person,.note{background:#fcfaf6;border:1px solid #eae4d9;border-radius:14px;padding:19px;min-height:120px}.person .circle{background:#e6eee6;width:48px;height:48px;display:grid;place-items:center;color:var(--green);border-radius:100%;font-size:23px;margin-bottom:11px}.person h3{font:700 16px 'Kalpurush',serif;color:var(--green);margin:0 0 8px}.person p,.note p{font-size:12px;color:var(--muted);margin:4px 0}.status{color:#916e32;font-size:11px}.action{border:1px solid #c6a465;background:white;color:#0b5443;font-size:12px;padding:9px 14px;border-radius:30px;margin-top:13px}.action:hover{background:#eef2e8}
-.search{border:1px solid #d6dccd;border-radius:12px;width:100%;max-width:410px;padding:11px 14px;margin-bottom:20px;background:#fff}.article{background:#fcfaf6;border-left:3px solid var(--gold);padding:18px 21px;border-radius:12px;margin-bottom:14px}.article h3{font:700 17px 'Kalpurush',serif;color:var(--green);margin:0 0 8px}.article p{margin:7px 0;color:#435a4f}
-footer{text-align:center;padding:30px 12px 45px;color:#728174;font-size:12px}a.link{color:#0a6b52;text-decoration:underline;text-underline-offset:3px}
-dialog{border:0;border-radius:16px;padding:26px;max-width:480px;width:calc(100% - 30px);box-shadow:0 20px 80px #001b1355}dialog::backdrop{background:#071e18a8}dialog h3{color:var(--green);margin:0 0 10px}dialog p{margin:8px 0}.dialogclose{float:right;border:0;border-radius:50%;background:#e7ebe6;width:34px;height:34px;font-size:18px}
-@media(max-width:850px){.menu{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:repeat(2,1fr)}nav{gap:0}}@media(max-width:560px){.head{display:block}.brand{font-size:16px}.brand small{font-size:9px}nav{margin-top:5px}.menu{gap:9px}.tile{padding:13px}.tile span{font-size:22px}.grid{grid-template-columns:1fr}.hero{padding:48px 15px}.section{padding:18px}} 
-.portrait{display:block;width:100%;height:210px;object-fit:cover;object-position:center 25%;background:#e9e8de;border-radius:12px;margin-bottom:12px}.portrait.big{height:280px;object-fit:contain;background:#f2eee5}.placeholder{width:100%;height:210px;display:grid;place-items:center;background:linear-gradient(140deg,#edf2ea,#e1e8e0);border:1px dashed #b7cbbd;border-radius:12px;margin-bottom:12px;color:#668477;font-size:13px;text-align:center}.person{overflow:hidden}.person h3{font-size:16px}#display{scroll-margin-top:80px}dialog{max-height:88vh;overflow-y:auto}
-
-.page-intro{padding:19px 0 24px}.book-banner{background:#fff9ea;border:1px solid #e7d9ba;border-radius:14px;padding:18px 22px;margin:22px 0;color:#5b4c31}
-.contents{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0}.chapter{background:#fff;border:1px solid #e8e1d5;padding:18px;border-radius:14px;text-align:left;transition:transform .2s}.chapter:hover{transform:translateY(-3px);border-color:#c9a462}.chapter .num{font-size:11px;color:#a17a43}.chapter strong{display:block;color:#0b5443;font-size:16px}.chapter small{display:block;color:#6c796f}.reading{max-width:790px;margin:0 auto}.entry{padding:25px 0;border-bottom:1px solid #e8e1d5}.entry h3{font:700 20px 'Kalpurush',serif;color:#0b5443;margin:0 0 14px}.entry p{font-size:15px;line-height:2.05;margin:10px 0;white-space:pre-line}.grid-books{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.portrait{width:100%;height:210px;object-fit:cover;border-radius:12px;margin-bottom:12px;background:#e5eee8}.portrait.big{max-width:300px;height:360px}.person .name{font-size:17px;color:#0b5443;font-weight:700}.person dt{font-size:12px;color:#6c796f}.person dd{font-size:13px;margin:0 0 5px}.gallery-card{margin:0;border-radius:14px;background:white;border:1px solid #e8e1d5;overflow:hidden}.gallery-card img{width:100%;aspect-ratio:4/3;object-fit:cover}.gallery-card figcaption{padding:10px 13px;color:#385347;font-weight:600}.footcontrols{display:flex;justify-content:space-between;gap:10px;margin:35px 0}.footcontrols button{background:#0b5443;color:#fff;padding:10px 20px;border:0;border-radius:25px}.alert{padding:15px 18px;border-left:3px solid #c9a462;background:#fff8e9;color:#68532d;margin:20px 0;border-radius:10px}.modal{border:0;border-radius:18px;padding:20px;max-height:90vh;max-width:700px;width:90vw}.modal::backdrop{background:#0a251ecb}.modal img{max-width:100%;max-height:70vh;object-fit:contain}.smalltag{font-size:12px;color:#806735}.menu-link{color:#0b5443;border-bottom:1px solid #b5c9bb}
-@media(max-width:700px){.contents{grid-template-columns:repeat(2,1fr)}.grid-books{grid-template-columns:repeat(2,1fr)}.entry{padding:17px 0}.entry p{font-size:14px}}
-@media(max-width:470px){.contents{grid-template-columns:1fr}.grid-books{grid-template-columns:1fr}.portrait{height:300px}}</style></head>
+:root{
+  --green:#0B5443; --maroon:#7A1F2B; --gold:#C9A462; --ivory:#FBF8F1;
+  --line:rgba(11,84,67,.16); --fine:rgba(201,164,98,.32); --soft:rgba(11,84,67,.042);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+html,body,button,input,select,textarea,dialog{font-family:'Kalpurush',sans-serif}
+body{margin:0;background:var(--ivory);color:var(--green);font-size:15px;line-height:1.85;-webkit-font-smoothing:antialiased}
+button,a{ -webkit-tap-highlight-color:transparent }
+button{cursor:pointer;font:inherit}
+a{color:inherit;text-decoration:none}
+button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+button:disabled{cursor:not-allowed;opacity:.55}
+header{position:sticky;top:0;z-index:30;background:rgba(251,248,241,.98);border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}
+.head{max-width:1160px;margin:auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:inline-flex;flex-direction:column;color:var(--green);font-size:19px;font-weight:700;line-height:1.45}
+.brand small{font-size:11px;letter-spacing:.04em;color:var(--maroon);font-weight:500}
+nav{display:flex;gap:5px;align-items:center}
+nav button{border:1px solid transparent;background:transparent;border-radius:999px;padding:8px 14px;color:var(--green);font-size:13px;transition:background .18s,border-color .18s}
+nav button:hover,nav button.active{background:var(--green);color:var(--ivory)}
+nav button:not(.active):focus-visible{border-color:var(--gold)}
+main{max-width:1160px;margin:auto;padding:28px 24px 88px}
+.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:stretch;background:var(--ivory);border:1px solid var(--line);border-radius:23px;padding:clamp(24px,5vw,66px);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,var(--green) 0 58%,var(--gold) 58% 78%,var(--maroon) 78% 100%)}
+.hero-content{position:relative;z-index:1}
+.hero-kicker{display:flex;align-items:center;gap:10px;color:var(--maroon);letter-spacing:.05em;font-size:13px;font-weight:700}
+.hero-kicker::before{content:"";height:7px;width:7px;background:var(--gold);border-radius:50%}
+.hero-arabic{color:var(--green);margin-top:22px;font-family:serif;font-size:19px}
+.hero h1{font-family:'Kalpurush',sans-serif;font-weight:700;font-size:clamp(31px,4.6vw,56px);line-height:1.35;margin:15px 0 2px;letter-spacing:-.02em;color:var(--green)}
+.hero h2{font-family:'Kalpurush',sans-serif;font-weight:500;font-size:clamp(21px,2.6vw,29px);line-height:1.5;color:var(--maroon);margin:0}
+.hero-description{color:var(--green);font-size:14px;margin:17px 0;opacity:.78}
+.hero-rule{background:var(--gold);height:2px;width:58px;margin:22px 0}
+.hero-meta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:24px}
+.meta-item{border-right:1px solid var(--fine);padding-right:14px;font-size:13px;line-height:1.7;display:flex;flex-direction:column}
+.meta-item:last-child{border-right:0}
+.meta-item span{font-size:11px;color:var(--maroon)}
+.hero-action{border:1px solid var(--green);background:var(--green);color:var(--ivory);padding:10px 23px;border-radius:999px;font-size:14px;font-weight:700;min-height:44px;transition:transform .15s,background .15s}
+.hero-action:hover{background:var(--maroon);border-color:var(--maroon);transform:translateY(-1px)}
+.hero-figure{background:var(--green);border-radius:18px;min-height:320px;color:var(--ivory);padding:32px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden}
+.hero-figure::before{content:"";position:absolute;inset:12px;border:1px solid rgba(201,164,98,.62);border-radius:11px;pointer-events:none}
+.figure-label{color:var(--gold);font-size:13px;z-index:1}
+.figure-count{font-family:'Kalpurush',sans-serif;font-size:clamp(80px,11vw,135px);font-weight:700;line-height:1.03;letter-spacing:-.04em;color:var(--ivory);margin:10px 0 0;z-index:1}
+.figure-name{font-size:23px;font-weight:700;line-height:1.4;z-index:1}
+.figure-date{font-size:12px;opacity:.88;margin-top:28px;color:var(--gold);z-index:1}
+.book-banner{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:clamp(20px,4vw,30px);margin:24px 0 46px;color:var(--green);display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.book-banner .quote-item + .quote-item{border-left:1px solid var(--fine);padding-left:24px}
+.book-banner .quote-item strong{display:block;font-size:12px;letter-spacing:.04em;color:var(--maroon)}
+.book-banner .quote-arabic{font-family:serif;text-align:left;font-size:19px;line-height:2.2;color:var(--green)}
+.book-banner p{margin:8px 0 0;font-size:13px;line-height:1.8}
+.page-intro{font-family:'Kalpurush',sans-serif;font-size:27px;line-height:1.4;font-weight:700;color:var(--green);margin:36px 0 6px}
+.contents-caption{color:var(--maroon);font-size:13px;margin:0 0 20px}
+.contents{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:0 0 28px}
+.chapter{min-width:0;display:flex;flex-direction:column;align-items:flex-start;text-align:left;min-height:146px;border:1px solid var(--line);background:var(--ivory);padding:19px 20px;border-radius:13px;position:relative;transition:transform .17s,border-color .17s,box-shadow .17s}
+.chapter::after{content:"↗";position:absolute;right:18px;top:17px;color:var(--gold);font-size:18px;font-weight:700;transition:transform .17s}
+.chapter:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:0 9px 22px rgba(11,84,67,.07)}
+.chapter:hover::after{transform:translate(2px,-2px)}
+.chapter .num{color:var(--maroon);font-size:12px;letter-spacing:.07em;font-weight:600}
+.chapter strong{color:var(--green);font-size:18px;line-height:1.4;margin:11px 0 5px;padding-right:17px}
+.chapter small{color:var(--green);opacity:.75;font-size:12px;line-height:1.6}
+.section{margin:12px auto 0;max-width:100%;background:var(--ivory);border:1px solid var(--line);border-radius:20px;padding:clamp(22px,5vw,54px);min-height:350px}
+.section>h2{font-family:'Kalpurush',sans-serif;font-size:clamp(27px,3vw,35px);font-weight:700;line-height:1.4;margin:0 0 12px;color:var(--green)}
+.goldline{width:46px;height:2px;background:var(--gold);margin:0 0 29px}
+.reading{max-width:770px;margin:0 auto}
+.entry{border-bottom:1px solid var(--line);padding:22px 0 29px}
+.entry:last-child{border-bottom:0}
+.entry h3{font-family:'Kalpurush',sans-serif;color:var(--maroon);font-size:22px;font-weight:700;line-height:1.5;margin:0 0 13px}
+.entry h3::before{content:"";display:inline-block;width:12px;height:2px;background:var(--gold);vertical-align:middle;margin-right:11px}
+.entry p{font-size:16px;line-height:2.12;margin:10px 0;white-space:pre-line;color:var(--green)}
+.grid-books,.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.person{min-width:0;background:var(--ivory);border:1px solid var(--line);border-radius:14px;padding:13px 13px 20px;overflow:hidden;transition:border-color .18s,transform .18s}
+.person:hover{border-color:var(--gold);transform:translateY(-2px)}
+.portrait{display:block;width:100%;height:275px;object-fit:cover;object-position:center 26%;border-radius:9px;background:var(--soft);margin:0 0 15px}
+.portrait.big{max-width:320px;height:350px;object-fit:contain}
+.person .name,.person h3{font-weight:700;font-size:19px;color:var(--green);line-height:1.4;margin:0 0 10px}
+.person .name::after{content:"";display:block;background:var(--gold);height:2px;width:30px;margin-top:10px}
+.person p{font-size:14px;color:var(--maroon);margin:8px 0}
+.person dl{margin:0}.person dt{font-size:11px;color:var(--maroon);margin-top:10px}.person dd{font-size:14px;margin:0;color:var(--green);line-height:1.5}
+.placeholder{height:275px;border:1px dashed var(--gold);border-radius:9px;background:var(--soft);color:var(--maroon);display:grid;place-items:center;font-size:13px;text-align:center;padding:18px;margin-bottom:15px}
+.gallery-card{background:var(--ivory);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:0;padding:9px;transition:border-color .18s,transform .18s}
+.gallery-card:hover{border-color:var(--gold);transform:translateY(-2px)}
+.gallery-card button{display:block;width:100%;border:0;background:transparent;padding:0}
+.gallery-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+.gallery-card figcaption{padding:10px 5px 3px;font-size:14px;color:var(--green);font-weight:600}
+.footcontrols{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:42px 0 0}
+.footcontrols button{background:var(--green);border:1px solid var(--green);border-radius:999px;padding:11px 22px;color:var(--ivory);font-size:14px;min-height:44px;transition:background .17s}
+.footcontrols button:hover{background:var(--maroon);border-color:var(--maroon)}
+.alert{padding:17px 20px;border-left:3px solid var(--gold);background:var(--soft);border-radius:9px;font-size:14px;color:var(--maroon);margin:24px 0;line-height:1.85}
+.menu-link{color:var(--maroon);border-bottom:1px solid var(--gold);text-underline-offset:4px}
+footer{max-width:1160px;margin:auto;border-top:1px solid var(--line);padding:23px 24px 45px;text-align:center;font-size:12px;color:var(--green);opacity:.79;line-height:1.9}
+dialog.modal{border:1px solid var(--line);border-radius:18px;background:var(--ivory);padding:20px;max-height:90vh;max-width:730px;width:90vw;color:var(--green)}
+dialog::backdrop{background:rgba(11,84,67,.83)}
+.modal img{display:block;max-width:100%;max-height:68vh;object-fit:contain;margin:auto}
+.action{display:inline-flex;justify-content:center;align-items:center;border:1px solid var(--green);background:var(--ivory);border-radius:999px;color:var(--green);padding:9px 17px;margin-bottom:15px;font-size:13px}
+.action:hover{background:var(--green);color:var(--ivory)}
+.smalltag{font-size:13px;color:var(--maroon)}
+@media(max-width:840px){
+ .head{flex-wrap:wrap;gap:8px}.contents{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .hero{grid-template-columns:1fr .78fr;padding:32px;gap:18px}
+ .hero-figure{min-height:290px}.grid-books{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:580px){
+ html{scroll-padding-top:110px}.head{padding:10px 16px}.brand{font-size:17px}.brand small{font-size:10px}
+ nav{width:100%;display:grid;grid-template-columns:repeat(4,1fr);gap:3px}nav button{padding:8px 4px;font-size:12px}
+ main{padding:16px 14px 56px}.hero{grid-template-columns:1fr;gap:24px;padding:24px 20px}.hero-arabic{margin-top:13px}.hero h1{font-size:35px}.hero h2{font-size:22px}.hero-figure{min-height:230px;padding:20px}
+ .figure-count{font-size:83px}.figure-date{margin-top:12px}.hero-meta{gap:12px}.book-banner{grid-template-columns:1fr;gap:14px;margin:15px 0 28px}.book-banner .quote-item + .quote-item{border-left:0;border-top:1px solid var(--fine);padding:13px 0 0}
+ .contents{grid-template-columns:1fr;gap:9px}.chapter{min-height:96px;padding:14px 18px}.chapter strong{margin:3px 0}.page-intro{margin-top:26px}
+ .section{padding:22px 17px;border-radius:15px}.grid-books,.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .person{padding:8px 8px 13px}.portrait,.placeholder{height:188px}.person .name{font-size:15px}
+ .entry h3{font-size:20px}.entry p{font-size:15px;line-height:2.04}
+ .gallery-card{padding:5px}.gallery-card figcaption{font-size:12px}
+}
+@media(max-width:385px){.grid-books,.grid{grid-template-columns:1fr}.portrait,.placeholder{height:310px}.hero h1{font-size:31px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+</style></head>
 <body><header><div class="head"><a class="brand" href="#home">মাদরাসাতুল ওহী<small>পাগড়ি প্রদান অনুষ্ঠান · ডিজিটাল স্মারক ২০২৬</small></a><nav><button type="button" data-go="home">প্রচ্ছদ</button><button type="button" data-go="students">১৪ হাফেজ</button><button type="button" data-go="contents">সূচিপত্র</button><button type="button" data-go="contact">যোগাযোগ</button></nav></div></header>
 <main id="app" style="padding-bottom:60px"></main>
 <dialog id="photoModal" class="modal"><button id="closePhoto" class="action">বন্ধ করুন ×</button><div id="modalBody"></div></dialog>
@@ -37,9 +128,7 @@ const PHOTOS=[["ফল উৎসবের আয়োজন","gallery_fruit_festiv
 const e=s=>String(s??"").replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const el=document.getElementById("app");
 const chapterLink=(c,i)=>'<button type="button" data-go="'+c.id+'" class="chapter"><span class="num">'+String(i+1).padStart(2,"0")+' · '+e(c.glyph)+'</span><strong>'+e(c.title)+'</strong><small>'+e(c.desc)+'</small></button>';
-const cover=()=>'<div class="hero"><div class="eyebrow">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</div><h1>মাদরাসাতুল ওহী</h1><h2>পাগড়ি প্রদান অনুষ্ঠান ২০২৬</h2><div class="line"></div><p>শুক্রবার, ১১ ডিসেম্বর ২০২৬ · নারায়ণগঞ্জ</p><div class="stat">✦ ১৪ জন হাফেজ শিক্ষার্থী ✦</div></div>'+
-'<div class="book-banner"><b>ডিজিটাল স্মারক</b><div>وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ</div><p>আমি কুরআনকে উপদেশ গ্রহণের জন্য সহজ করে দিয়েছি; অতএব, উপদেশ গ্রহণকারী কেউ আছে কি? — সূরা কামার, আয়াত ১৭</p><div>خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</div><p>তোমাদের মধ্যে সর্বোত্তম সেই ব্যক্তি, যে নিজে কুরআন শেখে এবং অন্যকে শেখায়। — সহিহ বুখারি, হাদিস ৫০২৭</p></div>'+
-'<h2 class="page-intro">স্মারকের সূচিপত্র</h2><div class="contents">'+CHAPTERS.map(chapterLink).join('')+'</div><p class="alert">অনুষ্ঠানে মোট ১৪ জন পাগড়ি গ্রহণ করবে—এটি কর্তৃপক্ষের সর্বশেষ নিশ্চিত তথ্য। মূল স্মারকের একটি পুরোনো বার্তায় ১১ জন উল্লেখ আছে; ঐতিহাসিক লেখা অপরিবর্তিত রাখা হয়েছে।</p>';
+const cover=()=>"<section class=\"hero\"><div class=\"hero-content\"><div class=\"hero-kicker\">ডিজিটাল স্মারক · ২০২৬</div><div class=\"hero-arabic\" lang=\"ar\" dir=\"rtl\">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</div><h1>মাদরাসাতুল ওহী</h1><h2>পাগড়ি প্রদান অনুষ্ঠান ২০২৬</h2><p class=\"hero-description\">ব্রাইট স্কলারের তত্ত্বাবধানে পরিচালিত</p><div class=\"hero-rule\"></div><div class=\"hero-meta\"><div class=\"meta-item\"><span>তারিখ</span><strong>শুক্রবার, ১১ ডিসেম্বর ২০২৬</strong></div><div class=\"meta-item\"><span>স্থান</span><strong>নারায়ণগঞ্জ</strong></div></div><button class=\"hero-action\" type=\"button\" data-go=\"students\">আমাদের হাফেজগণ <span aria-hidden=\"true\">↗</span></button></div><aside class=\"hero-figure\"><span class=\"figure-label\">পাগড়ি গ্রহণকারী শিক্ষার্থী</span><strong class=\"figure-count\">১৪</strong><span class=\"figure-name\">জন হাফেজ</span><span class=\"figure-date\">মাদরাসাতুল ওহী · ২০২৬</span></aside></section><div class=\"book-banner\"><div class=\"quote-item\"><strong>আল-কুরআন · সূরা কামার ১৭</strong><div class=\"quote-arabic\" lang=\"ar\" dir=\"rtl\">وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ</div><p>আমি কুরআনকে উপদেশ গ্রহণের জন্য সহজ করে দিয়েছি; অতএব, উপদেশ গ্রহণকারী কেউ আছে কি?</p></div><div class=\"quote-item\"><strong>হাদিস · সহিহ বুখারি ৫০২৭</strong><div class=\"quote-arabic\" lang=\"ar\" dir=\"rtl\">خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</div><p>তোমাদের মধ্যে সর্বোত্তম সেই ব্যক্তি, যে নিজে কুরআন শেখে এবং অন্যকে শেখায়।</p></div></div><h2 class=\"page-intro\">স্মারকের সূচিপত্র</h2><p class=\"contents-caption\">পছন্দের অধ্যায় নির্বাচন করে পড়ুন</p>"+'<div class="contents">'+CHAPTERS.map(chapterLink).join('')+'</div><p class="alert">অনুষ্ঠানে মোট ১৪ জন পাগড়ি গ্রহণ করবে—এটি কর্তৃপক্ষের সর্বশেষ নিশ্চিত তথ্য। মূল স্মারকের একটি পুরোনো বার্তায় ১১ জন উল্লেখ আছে; ঐতিহাসিক লেখা অপরিবর্তিত রাখা হয়েছে।</p>';
 const p=v=>v&&v.trim()&&!/^\[/.test(v)?e(v):'<span class="smalltag">তথ্য সংযোজনের অপেক্ষায়</span>';
 function studentCard(x,i){return '<article class="person">'+(x.image?'<img class="portrait" alt="'+e(x.name)+'-এর ছবি" src="'+e(x.image)+'" loading="lazy">':'<div class="placeholder">ছবি সংযোজনের অপেক্ষায়</div>')+'<div class="name">'+e(x.name)+'</div><dl><dt>পিতা</dt><dd>'+p(x.father)+'</dd><dt>হিফজ শুরু</dt><dd>'+p(x.start)+'</dd><dt>হিফজ সমাপ্তি</dt><dd>'+p(x.end)+'</dd></dl></article>'}
 function render(key){const idx=CHAPTERS.findIndex(x=>x.id===key),c=CHAPTERS[idx];let body;
@@ -53,6 +142,7 @@ let notes=key==='foreword'?'<p class="alert">মূল স্মারকের 
 const nav=idx>=0?'<div class="footcontrols"><button type="button" data-go="'+(CHAPTERS[idx-1]?.id||'home')+'">← পূর্ববর্তী</button><button type="button" data-go="'+(CHAPTERS[idx+1]?.id||'home')+'">পরবর্তী →</button></div>':'';
 el.innerHTML=(c?'<section class="section" style="margin-top:26px"><h2>'+e(c.title)+'</h2><div class="goldline"></div>'+notes+body+nav+'</section>':body);
 document.title=(c?c.title:'প্রচ্ছদ')+' | মাদরাসাতুল ওহী ডিজিটাল স্মারক';
+document.querySelectorAll('nav button[data-go]').forEach(b=>b.classList.toggle('active',b.dataset.go===(c?c.id:'home')));
 history.replaceState(null,'','#'+(c?c.id:'home'));window.scrollTo({top:0,behavior:'smooth'});
 }
 document.addEventListener('click',ev=>{const b=ev.target.closest('[data-go]');if(b){render(b.dataset.go);return;}const t=ev.target.closest('[data-photo]');if(t){document.getElementById('modalBody').innerHTML='<h3>'+e(t.dataset.caption)+'</h3><img src="assets/gallery/'+e(t.dataset.photo)+'" alt="'+e(t.dataset.caption)+'">';document.getElementById('photoModal').showModal();}});
