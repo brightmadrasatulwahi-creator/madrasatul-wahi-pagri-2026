@@ -20,7 +20,7 @@ header{position:sticky;top:0;z-index:30;background:rgba(251,248,241,.98);border-
 .brand{display:inline-flex;flex-direction:column;color:var(--green);font-size:19px;font-weight:700;line-height:1.45}
 .brand small{font-size:11px;letter-spacing:.04em;color:var(--maroon);font-weight:500}
 nav{display:flex;gap:5px;align-items:center}
-nav button{border:1px solid transparent;background:transparent;border-radius:999px;padding:8px 14px;color:var(--green);font-size:13px;transition:background .18s,border-color .18s}
+nav button{border:1px solid transparent;background:transparent;border-radius:999px;padding:8px 14px;min-height:44px;color:var(--green);font-size:13px;transition:background .18s,border-color .18s}
 nav button:hover,nav button.active{background:var(--green);color:var(--ivory)}
 nav button:not(.active):focus-visible{border-color:var(--gold)}
 main{max-width:1160px;margin:auto;padding:28px 24px 88px}
@@ -50,7 +50,7 @@ main{max-width:1160px;margin:auto;padding:28px 24px 88px}
 .book-banner .quote-item + .quote-item{border-left:1px solid var(--fine);padding-left:24px}
 .book-banner .quote-item strong{display:block;font-size:12px;letter-spacing:.04em;color:var(--maroon)}
 .book-banner .quote-arabic{font-family:serif;text-align:left;font-size:19px;line-height:2.2;color:var(--green)}
-.book-banner p{margin:8px 0 0;font-size:13px;line-height:1.8}
+.book-banner p{margin:8px 0 0;font-size:14px;line-height:1.8}
 .page-intro{font-family:'Kalpurush',sans-serif;font-size:27px;line-height:1.4;font-weight:700;color:var(--green);margin:36px 0 6px}
 .contents-caption{color:var(--maroon);font-size:13px;margin:0 0 20px}
 .contents{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:0 0 28px}
@@ -110,13 +110,13 @@ dialog::backdrop{background:rgba(11,84,67,.83)}
  .contents{grid-template-columns:1fr;gap:9px}.chapter{min-height:96px;padding:14px 18px}.chapter strong{margin:3px 0}.page-intro{margin-top:26px}
  .section{padding:22px 17px;border-radius:15px}.grid-books,.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
  .person{padding:8px 8px 13px}.portrait,.placeholder{height:188px}.person .name{font-size:15px}
- .entry h3{font-size:20px}.entry p{font-size:15px;line-height:2.04}
+ .entry h3{font-size:20px}.entry p{font-size:16px;line-height:2.04}
  .gallery-card{padding:5px}.gallery-card figcaption{font-size:12px}
 }
 @media(max-width:385px){.grid-books,.grid{grid-template-columns:1fr}.portrait,.placeholder{height:310px}.hero h1{font-size:31px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 </style></head>
-<body><header><div class="head"><a class="brand" href="#home">মাদরাসাতুল ওহী<small>পাগড়ি প্রদান অনুষ্ঠান · ডিজিটাল স্মারক ২০২৬</small></a><nav><button type="button" data-go="home">প্রচ্ছদ</button><button type="button" data-go="students">১৪ হাফেজ</button><button type="button" data-go="contents">সূচিপত্র</button><button type="button" data-go="contact">যোগাযোগ</button></nav></div></header>
+<body><header><div class="head"><a class="brand" href="#home">মাদরাসাতুল ওহী<small>পাগড়ি প্রদান অনুষ্ঠান · ডিজিটাল স্মারক ২০২৬</small></a><nav aria-label="প্রধান নেভিগেশন"><button type="button" data-go="home">প্রচ্ছদ</button><button type="button" data-go="students">১৪ হাফেজ</button><button type="button" data-go="contents">সূচিপত্র</button><button type="button" data-go="contact">যোগাযোগ</button></nav></div></header>
 <main id="app" style="padding-bottom:60px"></main>
 <dialog id="photoModal" class="modal"><button id="closePhoto" class="action">বন্ধ করুন ×</button><div id="modalBody"></div></dialog>
 <footer>মাদরাসাতুল ওহী · পাগড়ি অনুষ্ঠান স্মারক ২০২৬<br>মূল স্মারকের লেখা যথাসম্ভব অপরিবর্তিতভাবে উপস্থাপিত হয়েছে। অসম্পূর্ণ তথ্য সংশোধনের অপেক্ষায়।</footer>
@@ -142,8 +142,8 @@ let notes=key==='foreword'?'<p class="alert">মূল স্মারকের 
 const nav=idx>=0?'<div class="footcontrols"><button type="button" data-go="'+(CHAPTERS[idx-1]?.id||'home')+'">← পূর্ববর্তী</button><button type="button" data-go="'+(CHAPTERS[idx+1]?.id||'home')+'">পরবর্তী →</button></div>':'';
 el.innerHTML=(c?'<section class="section" style="margin-top:26px"><h2>'+e(c.title)+'</h2><div class="goldline"></div>'+notes+body+nav+'</section>':body);
 document.title=(c?c.title:'প্রচ্ছদ')+' | মাদরাসাতুল ওহী ডিজিটাল স্মারক';
-document.querySelectorAll('nav button[data-go]').forEach(b=>b.classList.toggle('active',b.dataset.go===(c?c.id:'home')));
-history.replaceState(null,'','#'+(c?c.id:'home'));window.scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('nav button[data-go]').forEach(b=>b.classList.toggle('active',b.dataset.go===(key==='contents'?'contents':c?c.id:'home')));
+history.replaceState(null,'','#'+(c?c.id:'home'));if(key==='contents'){el.querySelector('.page-intro')?.scrollIntoView({behavior:'smooth',block:'start'});}else{window.scrollTo({top:0,behavior:'smooth'});}
 }
 document.addEventListener('click',ev=>{const b=ev.target.closest('[data-go]');if(b){render(b.dataset.go);return;}const t=ev.target.closest('[data-photo]');if(t){document.getElementById('modalBody').innerHTML='<h3>'+e(t.dataset.caption)+'</h3><img src="assets/gallery/'+e(t.dataset.photo)+'" alt="'+e(t.dataset.caption)+'">';document.getElementById('photoModal').showModal();}});
 document.getElementById('closePhoto').onclick=()=>document.getElementById('photoModal').close();
